@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    place-items: center;
+   height: 100vh;
+   background: black;
+    
+}
+main
+{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e';
+    gap: 5px;
+    grid-template-rows: 70px auto auto;
+}
+main div
+{
+ padding: 20px;
+}
+.a
+{
+    background: orangered;
+    grid-area: a;
+}
+.b
+{
+    background: orange;
+    grid-area: b;
+}
+.c
+{
+    background: green;
+    grid-area: c;
+}
+.d
+{
+    background: skyblue;
+    grid-area: d;
+}
+.e
+{
+    background: skyblue;
+    grid-area: e;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </main>
+</body>
+</html>
